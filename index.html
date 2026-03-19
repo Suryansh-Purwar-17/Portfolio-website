@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Purwar - Portfolio</title>
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Background glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <header class="header">
+        <a href="#home" class="logo">Suryansh<span>.</span></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Suryansh Purwar</h1>
+                <h3>Video Editor <span class="divider">•</span> Freelancer <span class="divider">•</span> Developer</h3>
+                <p class="tagline" style="max-width: 650px; font-size: 1.5rem;">I’m Suryansh Purwar, a freelance video editor and creative technologist currently pursuing my third-year B.Tech at Cambridge Institute of Technology. I specialize in crafting engaging visual content and modern digital experiences using tools like After Effects, Blender, and Figma, while also developing logical solutions through web development and data structures & algorithms.<br><br>My work combines creativity and problem-solving, allowing me to design visually compelling projects while maintaining strong technical foundations.</p>
+                
+                <div class="btn-group">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="home-visual">
+                <div class="anti-gravity-profile">
+                    <img src="profile_suryansh.jpeg" alt="Suryansh Purwar" class="profile-image">
+                    <div class="floating-icon icon-1" data-value="2"><i class='bx bxl-blender'></i></div>
+                    <div class="floating-icon icon-2" data-value="-3"><i class='bx bxl-figma'></i></div>
+                    <div class="floating-icon icon-3" data-value="4"><i class='bx bx-video-recording'></i></div>
+                    <div class="floating-icon icon-4" data-value="-2"><i class='bx bx-code-alt'></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="heading">About <span>Me</span></h2>
+            
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h3>My Journey</h3>
+                    <p>I’m a freelance video editor and developer currently studying B.Tech (3rd Year) at Cambridge Institute of Technology, maintaining a CGPA of 7.0.</p>
+                    <p>My primary interest lies in combining creative design with technology. I enjoy working on video editing, motion graphics, and digital content creation, while also building modern web interfaces and improving my skills in Data Structures and Algorithms.</p>
+                    <p>Alongside my academic journey, I actively work on freelance projects and personal experiments that allow me to explore visual storytelling, UI design, and creative development.</p>
+                    <p>I believe in continuously learning and building projects that push both my technical and creative abilities.</p>
+                </div>
+
+                <div class="about-timeline scroll-reveal right">
+                    <div class="interests-container" style="justify-content: center;">
+                        <div class="interest-card glass-card">
+                            <i class='bx bx-video'></i>
+                            <h4>Video Editing</h4>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <i class='bx bx-code-alt'></i>
+                            <h4>Development</h4>
+                        </div>
+                        <div class="interest-card glass-card">
+                            <i class='bx bx-brain'></i>
+                            <h4>Problem Solving</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="skills" style="min-height: 80vh; padding-top: 5rem;">
+            <h2 class="heading">My <span>Education</span></h2>
+            <div class="skills-container scroll-reveal" style="max-width: 800px; margin: 0 auto; display: block;">
+                <div class="skill-category glass-card" style="text-align: left; padding: 4rem;">
+                    <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                        <i class='bx bxs-graduation' style="font-size: 5rem; color: var(--main-color);"></i>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; text-align: left;">B.Tech</h3>
+                            <p style="font-size: 1.8rem; color: #cbd5e1;">Cambridge Institute of Technology</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <span style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(0,242,254,0.1); border: 1px solid rgba(0,242,254,0.3); border-radius: 20px; font-size: 1.4rem; color: var(--main-color);">Currently in 3rd Year</span>
+                        <span style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(0,242,254,0.1); border: 1px solid rgba(0,242,254,0.3); border-radius: 20px; font-size: 1.4rem; color: var(--main-color);">CGPA: 7.0</span>
+                    </div>
+                    <h4 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #fff;">Focus Areas:</h4>
+                    <ul style="list-style: none; font-size: 1.6rem; color: #cbd5e1; line-height: 2;">
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Software Development</li>
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Creative Digital Tools</li>
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Problem Solving & DSA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            
+            <div class="skills-container">
+                <div class="skill-category glass-card scroll-reveal">
+                    <h3>Creative Tools & Video</h3>
+                    <div class="project-tags" style="justify-content: center; margin-top: 3rem;">
+                        <span>After Effects</span>
+                        <span>Blender</span>
+                        <span>Figma</span>
+                        <span>Video Editing</span>
+                        <span>Motion Graphics</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-card scroll-reveal">
+                    <h3>Development</h3>
+                        <div class="project-tags" style="justify-content: center; margin-top: 2rem;">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>Flexbox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card scroll-reveal">
+                    <h3>Programming & Tools</h3>
+                        <div class="project-tags" style="justify-content: center; margin-top: 2rem;">
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Git</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="heading">Featured <span>Projects</span></h2>
+            
+            <div class="projects-container">
+                <div class="project-card glass-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 1">
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live</a>
+                            <a href="#"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Task Manager</h3>
+                        <p>A smart task management app powered by machine learning to prioritize your daily goals effectively.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live</a>
+                            <a href="#"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flight Logic Sim</h3>
+                        <p>Aerodynamics and flight path simulation tool with interactive 3D visualizations.</p>
+                        <div class="project-tags">
+                            <span>Three.js</span>
+                            <span>JavaScript</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 3">
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live</a>
+                            <a href="#"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Crypto Data Dashboard</h3>
+                        <p>Real-time cryptocurrency tracking dashboard with predictive analytics and dark mode UI.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Chart.js</span>
+                            <span>Node API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            
+            <div class="contact-container" style="flex-wrap: wrap;">
+                <div class="contact-info glass-card scroll-reveal" style="flex: 1 1 40rem;">
+                    <h3>Get In Touch</h3>
+                    <p>If you'd like to collaborate, discuss a project, or hire me for freelance work, feel free to reach out.</p>
+                    
+                    <div class="info-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>suryajbarwar51@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bxl-github'></i>
+                        <a href="https://github.com/Suryansh-Purwar-17/Portfolio-website" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--main-color)'" onmouseout="this.style.color='inherit'">github.com/Suryansh-Purwar-17/Portfolio-website</a>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bxl-linkedin'></i>
+                        <a href="https://www.linkedin.com/in/SuryanshPurwar" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--main-color)'" onmouseout="this.style.color='inherit'">linkedin.com/in/SuryanshPurwar</a>
+                    </div>
+                    
+                    <h4 style="margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.8rem; color: #fff;">Connect with me for:</h4>
+                    <ul style="list-style: none; font-size: 1.5rem; color: #cbd5e1; line-height: 2;">
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Freelance video editing</li>
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Creative projects</li>
+                        <li><i class='bx bx-check' style="color: var(--main-color); margin-right: 1rem;"></i>Web development collaborations</li>
+                    </ul>
+                </div>
+
+                <form action="#" class="contact-form glass-card scroll-reveal right" style="flex: 1 1 50rem;">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Mobile Number">
+                        <input type="text" placeholder="Email Subject" required>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://github.com/Suryansh-Purwar-17/Portfolio-website" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/SuryanshPurwar" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>&copy; 2026 Suryansh Purwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
