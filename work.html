@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Purwar - Creative Work</title>
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .work-section {
+            padding-top: 12rem;
+            min-height: 100vh;
+        }
+        
+        .work-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .media-card {
+            flex: 1 1 320px;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        .media-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: rgba(0, 242, 254, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .media-placeholder i {
+            font-size: 5rem;
+            color: var(--main-color);
+            opacity: 0.8;
+            transition: transform 0.3s ease;
+        }
+
+        .media-card:hover .media-placeholder i {
+            transform: scale(1.2);
+        }
+
+        .media-info {
+            padding: 2rem;
+        }
+
+        .media-info h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .media-info p {
+            font-size: 1.4rem;
+            color: #cbd5e1;
+        }
+        
+        .section-separator {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.3), transparent);
+            margin: 6rem 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Background glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <header class="header sticky" style="background: rgba(15, 23, 42, 0.9);">
+        <a href="index.html" class="logo">Suryansh<span>.</span></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Back to Home</a>
+            <a href="#videos" class="active">Videos</a>
+            <a href="#designs">Designs & Photos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videos" class="work-section">
+            <h2 class="heading">My <span>Videos</span></h2>
+            <p style="text-align: center; font-size: 1.6rem; color: #cbd5e1; max-width: 800px; margin: 0 auto;">A collection of my video editing and motion graphics projects.</p>
+            
+            <div class="work-grid">
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/BL generation.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>BL generation</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/VS code.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>VS Code</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/GTR final.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>GTR final</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/airbnb.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>Airbnb</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/game over final.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>Game Over final</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/gmail.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>Gmail</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/malhar 1.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>Malhar 1</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/ARC trailer.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>ARC trailer</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <video src="assets/videos/track order iphone 17.mp4" controls muted style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;"></video>
+                    </div>
+                    <div class="media-info">
+                        <h3>Track Order iPhone 17</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section id="designs" class="work-section" style="padding-top: 4rem;">
+            <h2 class="heading">Designs & <span>Photos</span></h2>
+            <p style="text-align: center; font-size: 1.6rem; color: #cbd5e1; max-width: 800px; margin: 0 auto;">UI/UX concepts, graphic designs, and digital art.</p>
+            
+            <div class="work-grid">
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/jai-bhuvanPOSTER.jpg" alt="jai-bhuvanPOSTER" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>Jai Bhuvan Poster</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/jj_draft.png" alt="jj_draft" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>JJ Draft</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/malhar-sangeet.png" alt="malhar-sangeet" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>Malhar Sangeet</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/narvarupa(1).png" alt="narvarupa" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>Narvarupa</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/summit.png" alt="summit" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>Summit</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/u25 offer black.png" alt="u25 offer black" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>U25 Offer Black</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+
+                <div class="media-card scroll-reveal">
+                    <div class="media-placeholder">
+                        <img src="assets/images/u25 offer white.png" alt="u25 offer white" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                    </div>
+                    <div class="media-info">
+                        <h3>U25 Offer White</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://github.com/Suryansh-Purwar-17/Portfolio-website" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/SuryanshPurwar" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>&copy; 2026 Suryansh Purwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Specific script overrides for work page
+        // Simple active link adjustment for the work page
+        const workNavLinks = document.querySelectorAll('header nav a');
+        workNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if(this.getAttribute('href').startsWith('#')) {
+                    workNavLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
